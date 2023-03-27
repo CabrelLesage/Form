@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon Formulaire</title>
+	<meta charset=utf-8" />
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<h1>Formulaire</h1>
+	<form method="POST" action traitemennt.php">
+		<fieldset>
+		  <legend><h4>Informations personnelles:</h4></legend>
+			<label for="nom">Nom de famille: </label>
+			<input type="text" name="nom" id="nom" placeholder="ex: Le_SAGE" required="required"/>
+			<br/>
+			<label for="prenom">Prénom: </label>
+			<input type="text" name="prenom" id="prenom" placeholder="ex: Cabrel" required="required"/>
+			<br/>
+			<label for="mail">Adresse mail: </label>
+			<input type="email" name="mail" id="mail" placeholder="ex: cabrellesage@example.com" required="required"/>
+			<br/>
+			<label for="url">Site Web: </label>
+			<input type="url" name="site" id="site" placeholder="https://www.example.org">
+			</br>
+			<label for="num">Age: </label>
+			<input type="date" name="date" id="date"/>
+			</br>
+			<input type="radio" name="homme" id="homme" checked="checked"/>
+			<label for="homme">Masculin</label>
+			<input type="radio" name="homme" id="homme"/>
+			<label for="femme">Femminin</label><br/>
+			<label for="pays">Pays: </label>
+			<select name="pays" id="pays">
+			 <optgroup label="Europe">
+			   <option value="belgique">Belgique</option>
+			   <option value="france">France</option>
+			   <option value="italie">Italie</option>
+			   <option value="allemagne">Allemagne</option>
+			   <option value="angleterre">UK</option>
+			 </optgroup>
+			 <optgroup label="Afrique">
+			   <option value="algerie">Algerie</option>
+			   <option value="maroc">Maroc</option>
+			   <option value="tunisie">Tunisie</option>
+			   <option value="cameroun">Cameroun</option>
+			   <option value="tchad">Tchad</option>
+			 </optgroup>
+			 <optgroup label="Amerique">
+			   <option value="canada">Canada</option>
+			   <option value="etats_unis">USA</option>
+			   <option value="brezil">Brezil</option>
+			   <option value="quebec">Quebec</option>
+			   <option value="colombie">Colombie</option>
+			 </optgroup>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend><h4>Compétences / Expérience</h4></legend>
+			<input type="checkbox" name="lanqage" value="html" id="html"/>
+			<label for "html">HTML</label>
+			<input type="checkbox" name="langage" value="css" id="css"/>
+			<label for "css">CSS</label>
+			<input type="checkbox" name="langage" value="js" id="js"/>
+			<label for "js">JavaScript</label>
+			<input type="checkbox" name="langage" value="php" id="php"/>
+			<label for "php">PHP</label>
+			<input type="checkbox" name="langage" value="sql" id="sql"/>
+			<label for "sql">SQL</label>
+			<input type="checkbox" name="langage" value="django" id="django"/>
+			<label for "django">Django</label>
+			<label for="commentaire"></label></br>
+			<textarea name="commentaire" id="commentaire" placeholder="Décrivez une experience pro"></textarea>
+			</fieldset>
+			<fieldset>
+			<legend><h4>Validation</h4></legend>
+			<label for="passe">Choisissez un mot de passe: </label>
+			<input type="password" name="passe" id="pseudo"/>
+			</fieldset>
+			
+			</p>
+			<center><input type="submit"  value="Envoyer"/></cen
+			<input type="reset" value="Anuler"/>
+		</p>
+	</form>
+	
+</body>
+
+</html>
+
